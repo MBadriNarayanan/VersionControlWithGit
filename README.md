@@ -88,19 +88,19 @@ of the latest commit. Execute git show HEAD^ to see the same details. ~2, ~~ or 
 * git log --oneline --graph command is used to check if we are on the most recent commit
 * Create a branch featureX using any method
   * Method 1 : 
-               * git branch featureX
-               * git checkout featureX
+              * git branch featureX
+              * git checkout featureX
 
   * Method 2 : git checkout -b featureX
   
  * Execute : git branch to verify if branch featureX has been created and it is the currently checked out branch
  * Execute : git log --oneline --graph to verify that thefeatureX branch is the current branch
  
-###### Creating commits on the branch
+##### Creating commits on the branch
 
 * Create a commit on the featureX branch : 
   * modify fileA.txt , adding "feature mistake" directly under the line "feature 1" 
-   * add a commit message of "add feature mistake"
+  * add a commit message of "add feature mistake"
 
 
 ##### Merging Branches
