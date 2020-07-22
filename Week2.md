@@ -33,7 +33,7 @@ of the latest commit. Execute git show HEAD^ to see the same details. ~2, ~~ or 
 #### Git Branches
 
 * Create a local repository Branching
-* Create a commit with FileA.txt containing "feature 1" and commit message "add feature 1". Commit should be made on the master branch.
+* Create a commit with fileA.txt containing "feature 1" and commit message "add feature 1". Commit should be made on the master branch.
 * Verify only one branch exists and its name is master by using : git branch
 * git log --oneline --graph command is used to check if we are on the most recent commit
 * Create a branch featureX using any method
@@ -92,3 +92,49 @@ delete commits, you can find the SHA-1 of your most recent featureX branch there
 
 
 #### Merging Branches
+
+* Create a local repository Merge
+* Create a commit with fileA.txt containing "feature 1" and commit message "add feature 1". Commit should be made on the master branch.
+* Verify only one branch exists and its name is master by using : git branch
+* git log --oneline --graph command is used to check if we are on the most recent commit
+* Create a branch feature2 using any method
+  * Method 1 : 
+              * Command 1 : git branch feature2
+              * Command 2 : git checkout feature2
+
+  * Method 2 : git checkout -b feature2
+  
+ * Execute : git branch to verify if branch feature2 has been created and it is the currently checked out branch
+ * Execute : git log --oneline --graph to verify that thefeature2 branch is the current branch
+
+##### Fast Forward Merge
+
+* Create a commit on the feature2 branch : 
+  * modify fileA.txt , adding "feature 2" directly under the line "feature 1" 
+  * add a commit message of "add feature 2"
+* Execute : git log --oneline --graph --all to view the commit graph. 
+* Execute : git checkout master to checkout the master branch. The working tree will be
+updated with the older version of fileA.txt . 
+* Execute : git merge feature2 command to merge the branch
+* Delete the feature2 branch
+
+* Create a branch feature3 using any method
+  * Method 1 : 
+              * Command 1 : git branch feature3
+              * Command 2 : git checkout feature3
+
+  * Method 2 : git checkout -b feature3
+  
+ * Execute : git branch to verify if branch feature3 has been created and it is the currently checked out branch
+ * Execute : git log --oneline --graph to verify that the feature3 branch is the current branch
+
+#####  Merge Commit
+
+* Create a commit on the feature3 branch : 
+  * modify fileA.txt , adding "adding feature 2
+adding feature 3" directly under the line "feature 1" 
+  * add a commit message of "add feature 3"
+* Execute : git log --oneline --graph --all to view the commit graph. 
+* Execute : git checkout master to checkout the master branch.
+* Execute : git merge --no-ff feature3 command to merge the branch
+* Delete the feature3 branch
