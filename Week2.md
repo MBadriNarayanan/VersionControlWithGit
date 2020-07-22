@@ -1,4 +1,4 @@
-### Week 1
+### Week 2
 
 * Create a FileB.txt file for the Week2 folder using echo with the content "Hi This is Version Control with Git"
 * To find the SHA-1 Value of the contents of FileB use the command : git hash-object FileB.txt
