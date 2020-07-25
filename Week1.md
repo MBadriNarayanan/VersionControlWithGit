@@ -14,7 +14,7 @@
 #### Creating Local Repository
 
 * Create a directory : repos
-* Navigate to repos and create a directory for the local repository. Let it be Demo.
+* Navigate to repos and create a directory for the local repository. Let it be "Demo".
 * Naviagte to Demo and execute the command : git init
 * O/P : Initialized empty Git repository in Demo/.git/
 * Check if Demo has a .git directory
@@ -37,7 +37,7 @@
 
 #### Pushing to remote repository
 
-* Create a remote repository using bitbucket with the name demorepo without a README file
+* Create a remote repository using bitbucket with the name "demorepo" without a README file
 * Change the directory to the location of the remote repository and type the command : git remote -v
 * Create a README file for the demorepo Repository using echo
 * Execute : git add README.md
