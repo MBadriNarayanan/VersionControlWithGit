@@ -32,14 +32,14 @@ of the latest commit. Execute git show HEAD^ to see the same details. ~2, ~~ or 
 
 #### Git Branches
 
-* Create a local repository Branching
+* Create a local repository "Branching"
 * Create a commit with fileA.txt containing "feature 1" and commit message "add feature 1". Commit should be made on the master branch.
 * Verify only one branch exists and its name is master by using : git branch
 * git log --oneline --graph command is used to check if we are on the most recent commit
-* Create a branch featureX using any method
-  * Method 1 : 
-              * Command 1 : git branch featureX
-              * Command 2 : git checkout featureX
+* Create a branch "featureX" using any method
+  * Method 1 :  
+        * Command 1 : git branch featureX
+        * Command 2 : git checkout featureX
 
   * Method 2 : git checkout -b featureX
   
@@ -93,7 +93,7 @@ delete commits, you can find the SHA-1 of your most recent featureX branch there
 
 #### Merging Branches
 
-* Create a local repository Merge
+* Create a local repository "Merge"
 * Create a commit with fileA.txt containing "feature 1" and commit message "add feature 1". Commit should be made on the master branch.
 * Verify only one branch exists and its name is master by using : git branch
 * git log --oneline --graph command is used to check if we are on the most recent commit
